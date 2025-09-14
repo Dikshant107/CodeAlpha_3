@@ -1,0 +1,68 @@
+/* ===== General Reset ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #0a0a0a; color: #fff; line-height: 1.6; }
+
+/* ===== Navbar ===== */
+header { background: #111; padding: 1rem; position: sticky; top: 0; z-index: 100; }
+nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: auto; }
+.logo { font-size: 1.6rem; font-weight: 700; color: #00ffcc; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { text-decoration: none; color: #fff; transition: color 0.3s; }
+.nav-links a:hover { color: #00ffcc; }
+
+/* ===== Hero Section ===== */
+.hero { display: flex; justify-content: center; align-items: center; min-height: 70vh; padding: 2rem; background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a); }
+.hero-content { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; text-align: center; }
+.hero-img { width: 150px; height: 150px; border-radius: 50%; border: 3px solid #00ffcc; object-fit: cover; box-shadow: 0px 0px 20px rgba(0,255,204,0.3); }
+
+.btn { display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background: #00ffcc; color: #000; border-radius: 5px; text-decoration: none; font-weight: 600; transition: transform 0.3s, background 0.3s; }
+.btn:hover { transform: scale(1.08); background: #00e6b8; }
+.small-btn { font-size: 0.9rem; padding: 0.4rem 1rem; }
+
+/* ===== Sections ===== */
+.section { max-width: 1000px; margin: auto; padding: 3rem 2rem; text-align: center; }
+
+/* ===== Skills & Projects Grid ===== */
+.skills-grid, .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.skill-card, .project-card { background: #1a1a1a; padding: 1rem; border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s; }
+.skill-card:hover, .project-card:hover { transform: translateY(-5px); box-shadow: 0 0 15px rgba(0,255,204,0.2); }
+
+/* ===== Contact Links ===== */
+.contact-links { display: flex; justify-content: center; gap: 15px; margin-top: 1rem; }
+.contact-links a { color: #00ffcc; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+.contact-links a:hover { color: #00e6b8; }
+.email-display {
+    color: #00ffcc;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  
+
+/* ===== Footer ===== */
+footer { text-align: center; padding: 1rem; background: #111; margin-top: 2rem; font-size: 0.9rem; color: #aaa; }
+
+/* ===== Fade-in Animation ===== */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+.email-display a,
+.profile-links a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.email-display a:hover,
+.profile-links a:hover {
+  color: #00e6b8;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+.email-display,
+.profile-links {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+
