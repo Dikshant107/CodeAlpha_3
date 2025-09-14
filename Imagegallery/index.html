@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Before Self - Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Title Section -->
+  <h1 class="title">Service Before Self</h1>
+  <p class="subtitle">Army • Fitness • Mindset</p>
+
+  <!-- Filter Buttons -->
+  <div class="filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="army">Army</button>
+    <button data-filter="running">Running</button>
+    <button data-filter="quotes">Quotes</button>
+  </div>
+
+  <!-- Gallery -->
+  <div class="gallery">
+    <!-- Army -->
+    <div class="gallery-item" data-category="army">
+      <img src="images/army1.jpg" alt="Army 1">
+    </div>
+    <div class="gallery-item" data-category="army">
+      <img src="images/army2.jpg" alt="Army 2">
+    </div>
+    <div class="gallery-item" data-category="army">
+      <img src="images/army3.jpg" alt="Army 3">
+    </div>
+    <div class="gallery-item" data-category="army">
+      <img src="images/army4.jpg" alt="Army 4">
+    </div>
+
+    <!-- Running -->
+    <div class="gallery-item" data-category="running">
+      <img src="images/running1.jpg" alt="Running 1">
+    </div>
+    <div class="gallery-item" data-category="running">
+      <img src="images/running2.jpg" alt="Running 2">
+    </div>
+    <div class="gallery-item" data-category="running">
+      <img src="images/running3.jpg" alt="Running 3">
+    </div>
+    <div class="gallery-item" data-category="running">
+      <img src="images/running4.jpg" alt="Running 4">
+    </div>
+
+    <!-- Quotes -->
+    <div class="gallery-item" data-category="quotes">
+      <img src="images/quote1.jpg" alt="Quote 1">
+    </div>
+    <div class="gallery-item" data-category="quotes">
+      <img src="images/quote2.jpg" alt="Quote 2">
+    </div>
+    <div class="gallery-item" data-category="quotes">
+      <img src="images/quote3.jpg" alt="Quote 3">
+    </div>
+    <div class="gallery-item" data-category="quotes">
+      <img src="images/quote4.jpg" alt="Quote 4">
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-image">
+    <div class="navigation">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
